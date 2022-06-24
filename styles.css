@@ -1,0 +1,139 @@
+/* Color palette: #3D5A80 , #98C1D9 , #E0FBFC , #EE6C4D , #293241 */
+/* palette{
+    color: #3D5A80;
+    color: #98C1D9;
+    color: #E0FBFC;
+    color: #EE6C4D;
+    color: #293241;
+} */
+
+/* BOTH PAGES */
+body{
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+.page-heading{
+    background-color: #3D5A80;
+    color: #E0FBFC;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.container{
+    min-height: 100%;
+}
+
+.main{
+    overflow: auto;
+    padding-bottom: 100px;
+}
+
+footer{
+    position: relative;
+    height: 100px;
+    background-color: #98C1D9;
+    margin-top: -10px;
+    clear: both;
+
+}
+
+footer a{
+    display: block;
+    text-align: center;
+    padding: 40px 0;
+}
+
+/* CONTACT LIST (FIRST PAGE) */
+dl{
+    height: 500px;
+    width: 400px;
+    margin: 20px auto;
+    border: 1px solid black;
+    box-sizing: border-box;
+    overflow: scroll;
+}
+
+dl div{
+    background-color: #E0FBFC;
+    padding: 0 0 24px 0;
+}
+
+dt, dd{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+dt{
+    background: #98C1D9;
+    background-color: #3D5A80;
+    color: #E0FBFC;
+    text-shadow: 0 0 30px;
+    font-weight: bold;
+    padding: 3px 3px 3px 24px;
+    border-bottom: 1px solid #3D5A80;
+    border-top: 1px solid #3D5A80;
+    position: sticky;
+    top: -1px;
+}
+
+dd{
+    margin: 0 0 0 0;
+    padding: 7px 7px 7px 24px;
+}
+
+dd:hover{
+    font-weight: bold;
+    background-color: #98C1D9;
+    padding: 10px 10px 10px 24px;
+}
+
+@media(max-width: 600px){
+    dl{
+        width: 100%;
+        margin: 20px 0 0 0;
+        border: none;
+        border-bottom: 1px solid black;
+    }
+}
+
+/* SECOND PAGE */
+.list-divs{
+    color: #293241;
+    background-color: #98C1D9;
+    border: 1px solid black;
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+.list-divs ul{
+    padding: 0;
+}
+
+#rover-image::before{
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-size: 20px;
+    background-image: url("images/mars_rover.jpg");
+    background-size: cover;
+    margin-right: 3px;
+}
+
+#gif-bullet::before{
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-size: 20px;
+    background-image: url("images/surprised.gif");
+    background-size: cover;
+    margin-left: 3px;
+}
+
